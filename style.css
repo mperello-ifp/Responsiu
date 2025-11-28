@@ -1,67 +1,61 @@
-body{
-    font-size: 24px;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+body {
+    font-size: 1.5rem;
+    font-family:Helvetica, sans-serif;
 }
 
-h1{
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
     font-family: "Fascinate Inline", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
-p{
-    margin:0;
-   font-family: "Caveat", cursive;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+p {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margin: 0;
 }
 
-.progres{
+.progres {
     height: 10px;
+    width: 100%;
     background: limegreen;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     right: 0;
     z-index: 1000;
-    width:100%;
     scale: 0 1;
     animation: analitzador linear;
-       -webkit-animation-timeline:scroll()
-            -moz-animation-timeline:scroll()
-                animation-timeline:scroll();
-
-
+    animation-timeline: scroll();
 }
 
-
-@keyframes analitzador{
-
- to{
-scale: 1 1;
-transform-origin: center;
- }
+@keyframes analitzador {
+    to {
+        scale: 1 1;
+    }
 }
 
 @media (max-width:480px)
 {
-    body{
-         background-color: red;
-        }
+    body {
+        background-color: red;
+    }
 }
 
-@media (min-width:481px) and (max-width:1280px)
+@media (min-width:481px) and (max-width:1279px)
 {
-    body{
-            background-color: orange;
-        }
+    body {
+        background-color: orange;
+    }
 }
 
 @media (min-width:1280px)
 {
-    body{
-            background-color: green;
-        }
+    body {
+        background-color: green;
+    }
 }
-
